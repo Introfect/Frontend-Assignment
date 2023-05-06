@@ -22,14 +22,16 @@ const Editor = () => {
     }
   }
 
+ 
   return (
     <div> 
+      
     <div>
       <textarea
-      className='w-full h-96 p-4 border-blue-50'
+      className='w-full h-96 p-4 border-blue-500 border-4 rounded-lg '
       onChange={handleOnChange}
       />
-      <button onClick={handleConvertToJSON}>Convert to JSON</button>
+      <button className='bg-blue-500 p-4 text-center m-4 rounded-md' onClick={handleConvertToJSON}>Convert to JSON</button>
     </div>
     </div>
   );
